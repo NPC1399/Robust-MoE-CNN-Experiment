@@ -5,7 +5,8 @@ from torch.autograd import Variable
 
 
 def squared_l2_norm(x):
-    flattened = x.view(x.unsqueeze(0).shape[0], -1)
+    """Compute the squared L2 norm for each sample in a batch."""
+    flattened = x.view(x.size(0), -1)
     return (flattened ** 2).sum(1)
 
 
