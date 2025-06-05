@@ -1,8 +1,3 @@
-# Robust Mixture-of-Expert Training for Convolutional Neural Networks (ICCV2023)
-
-Official repository for MoE-CNN robust training in our ICCV'23 [paper](https://arxiv.org/abs/2308.10110v1).
-
-
 ## What is in this repository?
 
 This repository supports the robust training of different CNN models using MoE. All the available model architectures are listed in the `models` folder.
@@ -109,6 +104,7 @@ Some of the code in this repository is based on the following amazing works.
 * https://github.com/allenai/hidden-networks
 * https://github.com/inspire-group/hydra
 
+Originate from Robust Mixture-of-Expert Training for Convolutional Neural Networks (ICCV2023) [paper](https://arxiv.org/abs/2308.10110v1).
 
 
 
