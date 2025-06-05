@@ -9,3 +9,4 @@ datasets
 six
 tqdm
 scipy==1.6.0
+pytorch-lightning
