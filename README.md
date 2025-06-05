@@ -54,6 +54,17 @@ To evaluate a VGG-16 model with a ratio of 0.5 using AutoAttack on CIFAR-10.
 ```
 python3 auto_attack_eval.py --arch vgg16_bn_ori --ratio 0.5 --source-net SOME_PATH
 ```
+### Distributed training
+
+We provide `train_lightning.py` for multi-GPU and multi-node training using PyTorch Lightning. An example Slurm script `slurm_pl_multinode.sh` runs training on two nodes with four GPUs each.
+
+To train a ResNet-50 MoE model on ImageNet with two nodes:
+
+```bash
+srun python3 train_lightning.py --arch resnet50_imagenet_moe --dataset ImageNet \
+    --normalize --batch-size 256 --gpus 4 --num-nodes 2
+```
+
 
 
 ## Dataset Preparation
